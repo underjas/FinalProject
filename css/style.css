@@ -1,0 +1,122 @@
+/*Add CSS styles here*/
+#map {
+    height: 750px;
+    width: 90%;
+    margin: auto;
+}
+
+@font-face {
+    font-family: 'Stratum2';
+    src: url('../fonts/Stratum2-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: black;
+}
+/*header{
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    color:#D73F09;
+}*/
+
+h1{
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Stratum2', sans-serif;
+    /*font-family: Georgia, 'Times New Roman', Times, serif;*/
+    background-color: #D73F09;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    }
+
+    h1 img{
+        height: 60px;
+        width: auto;
+        position: absolute;
+        left: 20px;
+    }
+
+h3{color: white;
+    font-family:sans-serif;
+    margin-left: 50px;
+    }
+p{color:#D73F09;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;}
+h5{color:#080808;
+    text-align: center;}
+h4{color:#D73F09;
+    font-family:Georgia, 'Times New Roman', Times, serif;}
+
+    .info {
+        padding: 6px 8px;
+        /*font: 14px/16px Arial, Helvetica, sans-serif;*/
+        background: rgba(255,255,255,0.8);
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        border-radius: 5px;
+    }
+    .info h4 {
+        margin: 0 0 5px;
+        color: #D73F09 ;
+    }
+
+    .legend {
+        line-height: 18px;
+        color: #555;
+    }
+    .legend i {
+        width: 18px;
+        height: 18px;
+        float: left;
+        margin-right: 8px;
+        opacity: 0.8;
+    }
+    
+    .zone-label {
+        font-size: 12px;
+        font-weight: bold;
+        color: #000;
+        background: none;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        text-align: center;
+        text-shadow:
+            1px 1px 0 white,
+            -1px -1px 0 white, 
+            1px -1px 0 white, 
+            -1px 1px 0 white,
+            2px 2px 0 white,
+            -2px -2px 0 white, 
+            2px -2px 0 white, 
+            -2px 2px 0 white,
+            0 2px 2px white;
+    }
+
+    .leaflet-control-layers {
+        border: none !important;
+        box-shadow: none;
+        opacity: 0.8;
+    
+    }
+
+    #adaCheckbox {
+        outline: none !important;
+    }
+
+.view-details-link {
+    font-size: 12px;  /* Adjust the font size as needed */
+    color: #007bff;   /* Optional: change the color to make it look like a link */
+    text-decoration: none;  /* Optional: remove underline if you don't want it */
+}
+
+.view-details-link:hover {
+    text-decoration: underline;  /* Optional: underline on hover */
+}
+
+    /* Style for the always-visible legend */
