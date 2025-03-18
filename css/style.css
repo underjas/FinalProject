@@ -77,7 +77,7 @@ h4{color:#D73F09;
         opacity: 0.8;
     }
     
-    .zone-label {
+ /*  .zone-label {
         font-size: 12px;
         font-weight: bold;
         color: #000;
@@ -97,6 +97,8 @@ h4{color:#D73F09;
             -2px 2px 0 white,
             0 2px 2px white;
     }
+*/
+    
 
     .leaflet-control-layers {
         border: none !important;
@@ -119,4 +121,42 @@ h4{color:#D73F09;
     text-decoration: underline;  /* Optional: underline on hover */
 }
 
+.zone-label {
+
+    font-family: 'Stratum2', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: white; /* Text color */
+    text-shadow: 
+        -0.5px -0.5px 0 black,  
+         0.5px -0.5px 0 black,  
+        -0.5px  0.5px 0 black,  
+         0.5px  0.5px 0 black; /* Very subtle outline effect */
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#radioButtonMenu {
+    margin-bottom: 10px; /* Adds spacing between the radio buttons and the button below */
+}
+
+#parkingGarageButton {
+    display: block;
+    width: 100%;  /* Optional: make the button take full width of the container */
+    padding: 10px;
+    margin-top: 10px; /* Adds space above the button */
+    background-color: #007bff; /* Customize the button color */
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+#parkingGarageButton:hover {
+    background-color: #0056b3; /* Customize hover effect */
+}
     /* Style for the always-visible legend */
