@@ -62,7 +62,7 @@ function getColor(ZoneGroup) {
         'B1': '#F68F58', 'B2': '#F68F58', 'B3': '#F68F58',
         'C': '#FABC95',
         'R': '#000000', 'RA': '#000000',
-        'ShortTerm': '#DCB326',
+        'ShortTerm': '#FFB500',
         'ADA': '#00A6ED',
         'NonPublic': '#feedde'
         //'NonOSU': '#feedde'
@@ -490,7 +490,7 @@ function addLegend() {
             'Zone B': '#F68F58',
             'Zone C': '#FABC95',
             'Residential': '#000000',
-            'Hourly (metered)': '#DCB326',
+            'Hourly (metered)': '#FFB500',
             'ADA': '#00A6ED',
             'Official Use Only': '#feedde'
         };
@@ -508,11 +508,11 @@ function addLegend() {
 }
 
 function createRadioControl() {
-    const groups = ['All', 'A1', 'A2', 'A3', 'B1', 'B2', 'B3', 'C', 'R', 'RA', 'ShortTerm', 'ADA', 'NonPublic'];
+    const groups = ['All', 'A1', 'A2', 'A3', 'B1', 'B2', 'B3', 'C', 'R', 'Daily A', 'Daily B & C', 'Hourly'];
     const control = L.control({ position: 'topleft' });
 
     const displayGroups ={
-        'All': ['A1', 'A2', 'A3', 'B1', 'B2', 'B3', 'C', 'R', 'RA', 'ShortTerm', 'ADA', 'NonPublic'],
+        'All': ['A1', 'A2', 'A3', 'B1', 'B2', 'B3', 'C', 'R', 'Daily A', 'Daily B & C', 'ShortTerm'],
         'A1': ['A1', 'B1', 'B2', 'B3', 'C'],
         'A2': ['A2', 'B1', 'B2', 'B3', 'C'],
         'A3': ['A3', 'B1', 'B2', 'B3', 'C'],
@@ -521,10 +521,9 @@ function createRadioControl() {
         'B3': ['B3', 'C'],
         'C': ['C'],
         'R': ['R'],
-        'RA': ['RA'],
-        'ShortTerm': ['ShortTerm'],
-        'ADA': ['ADA'],
-        'NonPublic': ['NonPublic']
+        'Daily A': ['A1', 'A2', 'A3', 'B1', 'B2', 'B3', 'C'],
+         'Daily B & C': ['B1', 'B2', 'B3', 'C'],
+        'Hourly': ['ShortTerm'],
     };
 
     control.onAdd = function(map) {
