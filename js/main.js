@@ -508,11 +508,11 @@ function addLegend() {
 }
 
 function createRadioControl() {
-    const groups = ['All', 'A1', 'A2', 'A3', 'B1', 'B2', 'B3', 'C', 'R', 'Daily A', 'Daily B & C', 'Hourly'];
+    const groups = ['All', 'A1', 'A2', 'A3', 'B1', 'B2', 'B3', 'C', 'R', 'Daily A', 'Daily B/C', 'Hourly'];
     const control = L.control({ position: 'topleft' });
 
     const displayGroups ={
-        'All': ['A1', 'A2', 'A3', 'B1', 'B2', 'B3', 'C', 'R', 'Daily A', 'Daily B & C', 'ShortTerm'],
+        'All': ['A1', 'A2', 'A3', 'B1', 'B2', 'B3', 'C', 'R', 'Daily A', 'Daily B/C', 'ShortTerm'],
         'A1': ['A1', 'B1', 'B2', 'B3', 'C'],
         'A2': ['A2', 'B1', 'B2', 'B3', 'C'],
         'A3': ['A3', 'B1', 'B2', 'B3', 'C'],
@@ -522,7 +522,7 @@ function createRadioControl() {
         'C': ['C'],
         'R': ['R'],
         'Daily A': ['A1', 'A2', 'A3', 'B1', 'B2', 'B3', 'C'],
-         'Daily B & C': ['B1', 'B2', 'B3', 'C'],
+         'Daily B/C': ['B1', 'B2', 'B3', 'C'],
         'Hourly': ['ShortTerm'],
     };
 
